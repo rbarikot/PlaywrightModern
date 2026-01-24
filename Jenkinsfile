@@ -1,10 +1,12 @@
 pipeline {
     agent any
     
+    options { timestamps() }
+
     environment {
         DOCKER_IMAGE = 'playwright-automation'
-        TEAMS_WEBHOOK_URL = credentials('teams-webhook-url') // Store in Jenkins credentials
-        COMPOSE_PROJECT_NAME = "playwright_${BUILD_NUMBER}"
+        TEAMS_WEBHOOK_URL = credentials('teams-webhook-url')
+        COMPOSE_PROJECT_NAME = "playwright_%BUILD_NUMBER%"
     }
     
     stages {
@@ -18,72 +20,50 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                script {
-                    sh 'docker-compose build'
-                }
+                bat 'docker-compose build'
             }
         }
         
         stage('Run Playwright Tests') {
             steps {
                 echo 'Running Playwright tests...'
-                script {
-                    sh '''
-                        docker-compose run --rm \
-                        -e TEAMS_WEBHOOK_URL=${TEAMS_WEBHOOK_URL} \
-                        playwright-tests
-                    '''
-                }
+                bat '''
+                docker-compose run --rm ^
+                -e TEAMS_WEBHOOK_URL=%TEAMS_WEBHOOK_URL% ^
+                playwright-tests
+                '''
             }
         }
     }
     
     post {
         always {
-            echo 'Publishing test results...'
+            echo 'Publishing reports...'
             
-            // Publish HTML Report
             publishHTML([
-                allowMissing: false,
+                allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'testResult/htmlreport',
+                reportDir: 'testResult\\htmlreport',
                 reportFiles: 'index.html',
-                reportName: 'Playwright HTML Report',
-                reportTitles: 'Playwright Test Report'
+                reportName: 'Playwright HTML Report'
             ])
             
-            // Publish Smart Report
             publishHTML([
-                allowMissing: false,
+                allowMissing: true,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'testResult/smartreport',
+                reportDir: 'testResult\\smartreport',
                 reportFiles: 'smart-report.html',
-                reportName: 'Smart Report',
-                reportTitles: 'Playwright Smart Report'
+                reportName: 'Playwright Smart Report'
             ])
             
-            // Archive test results
             archiveArtifacts artifacts: 'testResult/**/*', allowEmptyArchive: true
             
-            // Cleanup Docker resources
-            script {
-                sh '''
-                    docker-compose down -v || true
-                    docker system prune -f || true
-                '''
-            }
-        }
-        
-        success {
-            echo 'Tests passed successfully!'
-            // Add notification here if needed
-        }
-        
-        failure {
-            echo 'Tests failed!'
-            // Add notification here if needed
+            bat '''
+            docker-compose down -v || exit 0
+            docker system prune -f
+            '''
         }
     }
 }
