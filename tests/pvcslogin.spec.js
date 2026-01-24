@@ -9,5 +9,4 @@ test("PVCS Login test", async ({ page }) => {
     await page.locator("//input[@id='nameField']").fill("Administrator")
     await page.locator("//input[@id='passwordField']").fill("Password1!")
     await page.locator("//button[text()='OK']").click();
-
 });

@@ -6,3 +6,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+testResult/htmlreport/data/af6169172be8dcc8a31e796e5fb99d4ca8f3488f.md
+/testResult
+/testResult/htmlreport
