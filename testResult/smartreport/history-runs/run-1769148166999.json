@@ -1,0 +1,43 @@
+{
+  "runId": "run-1769148166999",
+  "timestamp": "2026-01-23T06:02:46.999Z",
+  "tests": {
+    "test1.spec.js::@sanity Valid User Login With Credential": {
+      "testId": "test1.spec.js::@sanity Valid User Login With Credential",
+      "title": "@sanity Valid User Login With Credential",
+      "file": "test1.spec.js",
+      "status": "failed",
+      "duration": 21709,
+      "retry": 0,
+      "error": "Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://win2022da.otxlab.net:8443/vminet.html\nCall log:\n  - navigating to \"https://win2022da.otxlab.net:8443/vminet.html\", waiting until \"load\"\n\n    at HomePage.navigateToURL (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_Modern\\pages\\page\\Basepage.js:7:21)\n    at HomePage.navigateToHome (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_Modern\\pages\\page\\HomePage.js:12:16)\n    at C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_Modern\\tests\\test1.spec.js:10:20",
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 197,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 11,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 109,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/vminet.html\"",
+          "duration": 21335,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Close context",
+          "duration": 10,
+          "category": "pw:api"
+        }
+      ]
+    }
+  }
+}

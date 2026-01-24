@@ -1,0 +1,53 @@
+{
+  "runId": "run-1769146616542",
+  "timestamp": "2026-01-23T05:36:56.542Z",
+  "tests": {
+    "test1.spec.js::@sanity Valid User Login With Credential": {
+      "testId": "test1.spec.js::@sanity Valid User Login With Credential",
+      "title": "@sanity Valid User Login With Credential",
+      "file": "test1.spec.js",
+      "status": "timedOut",
+      "duration": 30053,
+      "retry": 0,
+      "error": "Test timeout of 30000ms exceeded.",
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 179,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 10,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 111,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/vminet.html\"",
+          "duration": 3347,
+          "category": "pw:api"
+        },
+        {
+          "title": "Click locator('text=/sampleDB')",
+          "duration": 676,
+          "category": "pw:api"
+        },
+        {
+          "title": "Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')",
+          "duration": 25889,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Close context",
+          "duration": 23,
+          "category": "pw:api"
+        }
+      ]
+    }
+  }
+}

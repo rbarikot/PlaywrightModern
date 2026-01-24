@@ -1,0 +1,62 @@
+{
+  "runId": "run-1769099231772",
+  "timestamp": "2026-01-22T16:27:11.772Z",
+  "tests": {
+    "test1.spec.js::@sanity Valid User Login With Credential": {
+      "testId": "test1.spec.js::@sanity Valid User Login With Credential",
+      "title": "@sanity Valid User Login With Credential",
+      "file": "test1.spec.js",
+      "status": "passed",
+      "duration": 21238,
+      "retry": 0,
+      "steps": [
+        {
+          "title": "Launch browser",
+          "duration": 197,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create context",
+          "duration": 11,
+          "category": "pw:api"
+        },
+        {
+          "title": "Create page",
+          "duration": 139,
+          "category": "pw:api"
+        },
+        {
+          "title": "Navigate to \"/vminet.html\"",
+          "duration": 3246,
+          "category": "pw:api"
+        },
+        {
+          "title": "Click locator('text=/sampleDB')",
+          "duration": 778,
+          "category": "pw:api"
+        },
+        {
+          "title": "Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')",
+          "duration": 16518,
+          "category": "pw:api",
+          "isSlowest": true
+        },
+        {
+          "title": "Fill \"Administrator\" locator('//input[@id=\\'passwordField\\']')",
+          "duration": 23,
+          "category": "pw:api"
+        },
+        {
+          "title": "Click locator('//button[text()=\\'OK\\']')",
+          "duration": 447,
+          "category": "pw:api"
+        },
+        {
+          "title": "Close context",
+          "duration": 42,
+          "category": "pw:api"
+        }
+      ]
+    }
+  }
+}

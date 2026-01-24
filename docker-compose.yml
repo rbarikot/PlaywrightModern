@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  playwright-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: playwright-automation
+    
+    # Environment variables
+    environment:
+      - CI=true
+      - TEAMS_WEBHOOK_URL=${TEAMS_WEBHOOK_URL}
+      # Add other environment variables from your .env file here
+    
+    # Mount volumes to persist test results
+    volumes:
+      - ./testResult:/app/testResult
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+    
+    # Use host network mode if needed for local testing
+    # network_mode: "host"
+    
+    # Shared memory size (important for browsers)
+    shm_size: '2gb'
+    
+    
