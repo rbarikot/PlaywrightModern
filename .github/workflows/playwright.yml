@@ -1,23 +1,52 @@
-name: Playwright Tests
+name: Playwright Tests + SonarQube
+
 on:
-  
+  push:
+    branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: self-hosted   # Change to ubuntu-latest if SonarQube is remote
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
       with:
-        node-version: lts/*
+        node-version: 20
+
     - name: Install dependencies
       run: npm ci
+
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
+
+    # Run tests with coverage
+    - name: Run Playwright tests with coverage
+      run: |
+        npm install --save-dev nyc
+        npx nyc --reporter=lcov npx playwright test
+
+    # SonarQube Scan
+    - name: SonarQube Scan
+      uses: SonarSource/sonarqube-scan-action@v2
+      env:
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+    # Quality Gate (pipeline fails if gate fails)
+    - name: SonarQube Quality Gate
+      uses: SonarSource/sonarqube-quality-gate-action@v1
+      timeout-minutes: 5
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+    # Upload Playwright HTML Report
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
