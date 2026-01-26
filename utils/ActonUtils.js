@@ -81,6 +81,28 @@ class ActionUtils
         }
     }
 
+    /**
+     * Handling Window Method
+     */
+
+    async clickAndSwitchToNewWindow(locatorValue, strategy='xpath') {
+    try {
+    const locator = this.getlocator._getLocator(locatorValue, strategy);
+
+    const [newPage] = await Promise.all([
+      this.page.waitForEvent('popup'),
+      locator.click()
+    ]);
+
+    await newPage.waitForLoadState();
+    return newPage; // return new window page object
+
+  } catch (error) {
+    throw new Error(`Failed to open new window → ${error.message}`);
+  }
+}
+
+
     
 }
 module.exports= ActionUtils
