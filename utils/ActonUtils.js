@@ -1,4 +1,6 @@
 import GetLocator from './GetLocatorStrategy';
+const KeyboardUtils = require('./KeyboardUtils');
+const FrameUtils = require('./FrameUtils');
 
 class ActionUtils
 {
@@ -6,6 +8,8 @@ class ActionUtils
     {
         this.page=page
         this.getlocator= new GetLocator(page);
+        this.keyboard = new KeyboardUtils();
+        this.frame = new FrameUtils(page);
     }
 
     /**
@@ -101,6 +105,25 @@ class ActionUtils
     throw new Error(`Failed to open new window → ${error.message}`);
   }
 }
+
+    /**
+     * Wait methods
+     */
+    async wait(milliseconds) {
+        await this.page.waitForTimeout(milliseconds);
+    }
+
+    /**
+     * Screenshot
+     */
+    async takeScreenshot(filename = 'screenshot.png', fullPage = true) {
+        try {
+            await this.page.screenshot({ path: filename, fullPage });
+            console.log(`✅ Screenshot saved: ${filename}`);
+        } catch (error) {
+            throw new Error(`Failed to take screenshot. Error: ${error.message}`);
+        }
+    }
 
 
     

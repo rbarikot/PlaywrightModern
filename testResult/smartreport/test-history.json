@@ -1,56 +1,48 @@
 {
   "runs": [
     {
-      "runId": "run-1769253054113",
-      "timestamp": "2026-01-24T11:10:54.113Z"
+      "runId": "run-1769676430831",
+      "timestamp": "2026-01-29T08:47:10.831Z"
     },
     {
-      "runId": "run-1769253097724",
-      "timestamp": "2026-01-24T11:11:37.724Z"
+      "runId": "run-1769676539992",
+      "timestamp": "2026-01-29T08:48:59.992Z"
     },
     {
-      "runId": "run-1769253113711",
-      "timestamp": "2026-01-24T11:11:53.711Z"
+      "runId": "run-1769676598166",
+      "timestamp": "2026-01-29T08:49:58.166Z"
     },
     {
-      "runId": "run-1769253163324",
-      "timestamp": "2026-01-24T11:12:43.324Z"
+      "runId": "run-1769676752561",
+      "timestamp": "2026-01-29T08:52:32.561Z"
     },
     {
-      "runId": "run-1769277694452",
-      "timestamp": "2026-01-24T18:01:34.452Z"
+      "runId": "run-1769677077508",
+      "timestamp": "2026-01-29T08:57:57.509Z"
     },
     {
-      "runId": "run-1769277779471",
-      "timestamp": "2026-01-24T18:02:59.471Z"
+      "runId": "run-1769677614618",
+      "timestamp": "2026-01-29T09:06:54.618Z"
     },
     {
-      "runId": "run-1769279081119",
-      "timestamp": "2026-01-24T18:24:41.119Z"
+      "runId": "run-1769683755469",
+      "timestamp": "2026-01-29T10:49:15.469Z"
     },
     {
-      "runId": "run-1769279355258",
-      "timestamp": "2026-01-24T18:29:15.258Z"
+      "runId": "run-1769683861864",
+      "timestamp": "2026-01-29T10:51:01.864Z"
     },
     {
-      "runId": "run-1769282496922",
-      "timestamp": "2026-01-24T19:21:36.922Z"
+      "runId": "run-1769684528881",
+      "timestamp": "2026-01-29T11:02:08.881Z"
     },
     {
-      "runId": "run-1769282610149",
-      "timestamp": "2026-01-24T19:23:30.149Z"
+      "runId": "run-1769684793026",
+      "timestamp": "2026-01-29T11:06:33.026Z"
     }
   ],
   "tests": {
     "test1.spec.js::@sanity Valid User Login With Credential": [
-      {
-        "passed": true,
-        "duration": 22117,
-        "timestamp": "2026-01-24T09:19:06.448Z",
-        "runId": "run-1769246321934",
-        "skipped": false,
-        "retry": 0
-      },
       {
         "passed": false,
         "duration": 4323,
@@ -120,6 +112,14 @@
         "duration": 24533,
         "timestamp": "2026-01-24T11:13:09.346Z",
         "runId": "run-1769253163324",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 30098,
+        "timestamp": "2026-01-29T06:25:53.355Z",
+        "runId": "run-1769667905397",
         "skipped": false,
         "retry": 0
       }
@@ -211,14 +211,6 @@
     "pvcslogin.spec.js::PVCS Login test": [
       {
         "passed": false,
-        "duration": 4,
-        "timestamp": "2026-01-22T16:55:42.185Z",
-        "runId": "run-1769100932602",
-        "skipped": false,
-        "retry": 0
-      },
-      {
-        "passed": false,
         "duration": 5,
         "timestamp": "2026-01-22T16:55:42.185Z",
         "runId": "run-1769100932602",
@@ -280,6 +272,22 @@
         "runId": "run-1769146798743",
         "skipped": false,
         "retry": 2
+      },
+      {
+        "passed": false,
+        "duration": 20031,
+        "timestamp": "2026-01-29T06:38:25.373Z",
+        "runId": "run-1769668681364",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 30189,
+        "timestamp": "2026-01-29T06:41:10.818Z",
+        "runId": "run-1769668822225",
+        "skipped": false,
+        "retry": 0
       }
     ],
     "rsa.spec.js::@sanity Valid User Login With Credential": [
@@ -331,140 +339,478 @@
         "skipped": false,
         "retry": 0
       }
+    ],
+    "test2.spec.js::should handle PVCS dialog": [
+      {
+        "passed": false,
+        "duration": 30081,
+        "timestamp": "2026-01-29T06:52:29.695Z",
+        "runId": "run-1769669500895",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 2399,
+        "timestamp": "2026-01-29T06:53:07.132Z",
+        "runId": "run-1769669583476",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 2088,
+        "timestamp": "2026-01-29T06:53:47.474Z",
+        "runId": "run-1769669624041",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 11864,
+        "timestamp": "2026-01-29T06:56:31.909Z",
+        "runId": "run-1769669778191",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::debug and handle PVCS dialog": [
+      {
+        "passed": true,
+        "duration": 5656,
+        "timestamp": "2026-01-29T08:09:11.101Z",
+        "runId": "run-1769674144414",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 5497,
+        "timestamp": "2026-01-29T08:09:59.504Z",
+        "runId": "run-1769674193034",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 6116,
+        "timestamp": "2026-01-29T08:10:37.872Z",
+        "runId": "run-1769674230727",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 16197,
+        "timestamp": "2026-01-29T08:12:22.389Z",
+        "runId": "run-1769674325262",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::disable external protocols using CDP": [
+      {
+        "passed": true,
+        "duration": 8025,
+        "timestamp": "2026-01-29T08:14:21.833Z",
+        "runId": "run-1769674453183",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 8115,
+        "timestamp": "2026-01-29T08:19:43.250Z",
+        "runId": "run-1769674774515",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::intercept all navigation": [
+      {
+        "passed": false,
+        "duration": 5475,
+        "timestamp": "2026-01-29T08:15:20.760Z",
+        "runId": "run-1769674514380",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 5974,
+        "timestamp": "2026-01-29T08:19:12.682Z",
+        "runId": "run-1769674745758",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::inspect page source": [
+      {
+        "passed": false,
+        "duration": 5961,
+        "timestamp": "2026-01-29T08:16:23.150Z",
+        "runId": "run-1769674576279",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 5280,
+        "timestamp": "2026-01-29T08:18:11.216Z",
+        "runId": "run-1769674684949",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 4624,
+        "timestamp": "2026-01-29T08:21:16.385Z",
+        "runId": "run-1769674870866",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::override click behavior completely": [
+      {
+        "passed": true,
+        "duration": 7046,
+        "timestamp": "2026-01-29T08:22:14.595Z",
+        "runId": "run-1769674926607",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::navigate without clicking link": [
+      {
+        "passed": true,
+        "duration": 8573,
+        "timestamp": "2026-01-29T08:23:08.393Z",
+        "runId": "run-1769674978869",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::disable JavaScript events": [
+      {
+        "passed": true,
+        "duration": 22901,
+        "timestamp": "2026-01-29T08:24:14.883Z",
+        "runId": "run-1769675031330",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::inspect sampleDB page": [
+      {
+        "passed": true,
+        "duration": 7123,
+        "timestamp": "2026-01-29T08:29:18.285Z",
+        "runId": "run-1769675350163",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::PVCS Login test": [
+      {
+        "passed": false,
+        "duration": 16127,
+        "timestamp": "2026-01-29T08:31:14.920Z",
+        "runId": "run-1769675457844",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 18430,
+        "timestamp": "2026-01-29T08:38:02.375Z",
+        "runId": "run-1769675863065",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::handle login with frame detection": [
+      {
+        "passed": true,
+        "duration": 8850,
+        "timestamp": "2026-01-29T08:32:59.165Z",
+        "runId": "run-1769675569297",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::inspect login frame content": [
+      {
+        "passed": true,
+        "duration": 9057,
+        "timestamp": "2026-01-29T08:36:05.901Z",
+        "runId": "run-1769675755863",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 9902,
+        "timestamp": "2026-01-29T08:36:24.019Z",
+        "runId": "run-1769675773115",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::complete login flow": [
+      {
+        "passed": true,
+        "duration": 22438,
+        "timestamp": "2026-01-29T08:39:35.913Z",
+        "runId": "run-1769675952555",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 28409,
+        "timestamp": "2026-01-29T08:40:44.370Z",
+        "runId": "run-1769676014962",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 33063,
+        "timestamp": "2026-01-29T08:41:58.899Z",
+        "runId": "run-1769676084873",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::handle PVCS dialog with keyboard": [
+      {
+        "passed": false,
+        "duration": 30033,
+        "timestamp": "2026-01-29T08:44:43.393Z",
+        "runId": "run-1769676236507",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::handle native OS dialog with robotjs": [
+      {
+        "passed": false,
+        "duration": 30031,
+        "timestamp": "2026-01-29T08:47:57.795Z",
+        "runId": "run-1769676430831",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test2.spec.js::navigate dialog with Tab key": [
+      {
+        "passed": false,
+        "duration": 30038,
+        "timestamp": "2026-01-29T08:49:46.835Z",
+        "runId": "run-1769676539992",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 34266,
+        "timestamp": "2026-01-29T08:50:33.479Z",
+        "runId": "run-1769676598166",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 28016,
+        "timestamp": "2026-01-29T08:53:01.606Z",
+        "runId": "run-1769676752561",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 28581,
+        "timestamp": "2026-01-29T08:58:26.997Z",
+        "runId": "run-1769677077508",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 29505,
+        "timestamp": "2026-01-29T09:07:25.144Z",
+        "runId": "run-1769677614618",
+        "skipped": false,
+        "retry": 0
+      }
+    ],
+    "test3.spec.js::@sanity Valid User Login With Credential": [
+      {
+        "passed": false,
+        "duration": 30047,
+        "timestamp": "2026-01-29T10:50:02.339Z",
+        "runId": "run-1769683755469",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": false,
+        "duration": 35031,
+        "timestamp": "2026-01-29T10:51:37.903Z",
+        "runId": "run-1769683861864",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 47515,
+        "timestamp": "2026-01-29T11:02:57.348Z",
+        "runId": "run-1769684528881",
+        "skipped": false,
+        "retry": 0
+      },
+      {
+        "passed": true,
+        "duration": 44366,
+        "timestamp": "2026-01-29T11:07:18.520Z",
+        "runId": "run-1769684793026",
+        "skipped": false,
+        "retry": 0
+      }
     ]
   },
   "summaries": [
     {
-      "runId": "run-1769253054113",
-      "timestamp": "2026-01-24T11:10:54.113Z",
-      "total": 0,
+      "runId": "run-1769676430831",
+      "timestamp": "2026-01-29T08:47:10.831Z",
+      "total": 1,
       "passed": 0,
-      "failed": 0,
+      "failed": 1,
       "skipped": 0,
       "flaky": 0,
       "slow": 0,
-      "duration": 19,
+      "duration": 46963,
       "passRate": 0
     },
     {
-      "runId": "run-1769253097724",
-      "timestamp": "2026-01-24T11:11:37.724Z",
-      "total": 0,
+      "runId": "run-1769676539992",
+      "timestamp": "2026-01-29T08:48:59.992Z",
+      "total": 1,
       "passed": 0,
-      "failed": 0,
+      "failed": 1,
       "skipped": 0,
       "flaky": 0,
       "slow": 0,
-      "duration": 20,
+      "duration": 46842,
       "passRate": 0
     },
     {
-      "runId": "run-1769253113711",
-      "timestamp": "2026-01-24T11:11:53.711Z",
-      "total": 0,
+      "runId": "run-1769676598166",
+      "timestamp": "2026-01-29T08:49:58.166Z",
+      "total": 1,
       "passed": 0,
+      "failed": 1,
+      "skipped": 0,
+      "flaky": 1,
+      "slow": 0,
+      "duration": 35312,
+      "passRate": 0
+    },
+    {
+      "runId": "run-1769676752561",
+      "timestamp": "2026-01-29T08:52:32.561Z",
+      "total": 1,
+      "passed": 1,
       "failed": 0,
+      "skipped": 0,
+      "flaky": 1,
+      "slow": 0,
+      "duration": 29045,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769677077508",
+      "timestamp": "2026-01-29T08:57:57.509Z",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 1,
+      "slow": 0,
+      "duration": 29488,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769677614618",
+      "timestamp": "2026-01-29T09:06:54.618Z",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 1,
+      "slow": 0,
+      "duration": 30525,
+      "passRate": 100
+    },
+    {
+      "runId": "run-1769683755469",
+      "timestamp": "2026-01-29T10:49:15.469Z",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
       "skipped": 0,
       "flaky": 0,
       "slow": 0,
-      "duration": 19,
+      "duration": 46869,
       "passRate": 0
     },
     {
-      "runId": "run-1769253163324",
-      "timestamp": "2026-01-24T11:12:43.324Z",
+      "runId": "run-1769683861864",
+      "timestamp": "2026-01-29T10:51:01.864Z",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0,
+      "flaky": 1,
+      "slow": 0,
+      "duration": 36039,
+      "passRate": 0
+    },
+    {
+      "runId": "run-1769684528881",
+      "timestamp": "2026-01-29T11:02:08.881Z",
       "total": 1,
       "passed": 1,
       "failed": 0,
       "skipped": 0,
       "flaky": 1,
       "slow": 1,
-      "duration": 26021,
+      "duration": 48466,
       "passRate": 100
     },
     {
-      "runId": "run-1769277694452",
-      "timestamp": "2026-01-24T18:01:34.452Z",
-      "total": 1,
-      "passed": 0,
-      "failed": 1,
-      "skipped": 0,
-      "flaky": 0,
-      "slow": 0,
-      "duration": 5444,
-      "passRate": 0
-    },
-    {
-      "runId": "run-1769277779471",
-      "timestamp": "2026-01-24T18:02:59.471Z",
+      "runId": "run-1769684793026",
+      "timestamp": "2026-01-29T11:06:33.026Z",
       "total": 1,
       "passed": 1,
       "failed": 0,
       "skipped": 0,
       "flaky": 1,
       "slow": 0,
-      "duration": 4547,
-      "passRate": 100
-    },
-    {
-      "runId": "run-1769279081119",
-      "timestamp": "2026-01-24T18:24:41.119Z",
-      "total": 1,
-      "passed": 0,
-      "failed": 1,
-      "skipped": 0,
-      "flaky": 1,
-      "slow": 0,
-      "duration": 4241,
-      "passRate": 0
-    },
-    {
-      "runId": "run-1769279355258",
-      "timestamp": "2026-01-24T18:29:15.258Z",
-      "total": 1,
-      "passed": 0,
-      "failed": 1,
-      "skipped": 0,
-      "flaky": 1,
-      "slow": 0,
-      "duration": 4192,
-      "passRate": 0
-    },
-    {
-      "runId": "run-1769282496922",
-      "timestamp": "2026-01-24T19:21:36.922Z",
-      "total": 1,
-      "passed": 1,
-      "failed": 0,
-      "skipped": 0,
-      "flaky": 1,
-      "slow": 0,
-      "duration": 4605,
-      "passRate": 100
-    },
-    {
-      "runId": "run-1769282610149",
-      "timestamp": "2026-01-24T19:23:30.149Z",
-      "total": 1,
-      "passed": 1,
-      "failed": 0,
-      "skipped": 0,
-      "flaky": 1,
-      "slow": 1,
-      "duration": 7297,
+      "duration": 45494,
       "passRate": 100
     }
   ],
   "runFiles": {
-    "run-1769253054113": "./history-runs/run-1769253054113.json",
-    "run-1769253097724": "./history-runs/run-1769253097724.json",
-    "run-1769253113711": "./history-runs/run-1769253113711.json",
-    "run-1769253163324": "./history-runs/run-1769253163324.json",
-    "run-1769277694452": "./history-runs/run-1769277694452.json",
-    "run-1769277779471": "./history-runs/run-1769277779471.json",
-    "run-1769279081119": "./history-runs/run-1769279081119.json",
-    "run-1769279355258": "./history-runs/run-1769279355258.json",
-    "run-1769282496922": "./history-runs/run-1769282496922.json",
-    "run-1769282610149": "./history-runs/run-1769282610149.json"
+    "run-1769676430831": "./history-runs/run-1769676430831.json",
+    "run-1769676539992": "./history-runs/run-1769676539992.json",
+    "run-1769676598166": "./history-runs/run-1769676598166.json",
+    "run-1769676752561": "./history-runs/run-1769676752561.json",
+    "run-1769677077508": "./history-runs/run-1769677077508.json",
+    "run-1769677614618": "./history-runs/run-1769677614618.json",
+    "run-1769683755469": "./history-runs/run-1769683755469.json",
+    "run-1769683861864": "./history-runs/run-1769683861864.json",
+    "run-1769684528881": "./history-runs/run-1769684528881.json",
+    "run-1769684793026": "./history-runs/run-1769684793026.json"
   }
 }

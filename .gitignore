@@ -9,3 +9,6 @@ node_modules/
 testResult/
 testResult/
 /testResult/htmlreport
+result.png
+testResult/smartreport/smart-report.html
+testResult/smartreport/test-history.json

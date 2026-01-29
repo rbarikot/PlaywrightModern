@@ -24,6 +24,7 @@ fs.mkdirSync(htmlReportDir, { recursive: true });
  */
 export default defineConfig({
   testDir: './tests',
+  timeout: 120000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -69,6 +70,10 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    headless: false,
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+    actionTimeout: 10000,  
   },
 
   /* Configure projects for major browsers */
@@ -77,7 +82,11 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    }
+    },
+    /*{
+      name: 'Google Chrome',
+      use: { channel: 'chrome'},
+    }*/
 
     /* Test against mobile viewports. */
     // {

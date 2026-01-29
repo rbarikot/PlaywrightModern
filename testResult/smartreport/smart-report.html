@@ -4718,7 +4718,7 @@
             </button>
           </div>
         </div>
-        <div class="timestamp">1/25/2026, 12:53:37 AM</div>
+        <div class="timestamp">1/29/2026, 4:37:18 PM</div>
       </div>
     </header>
 
@@ -4796,15 +4796,6 @@
       <div class="sidebar-filters" role="region" aria-label="Test filters">
         <div class="nav-section-title">Filters <button class="clear-filters-btn" onclick="clearAllFilters()" title="Clear all filters" aria-label="Clear all filters">✕</button></div>
         
-        <div class="filter-group" data-group="attention" role="group" aria-label="Attention filters">
-          <div class="filter-group-title" id="attention-filter-label">Attention</div>
-          <div class="filter-chips attention-chips" role="group" aria-labelledby="attention-filter-label">
-            
-            <button class="filter-chip attention-regression" data-filter="regression" data-group="attention" onclick="toggleFilter(this)" aria-pressed="false">Regression (1)</button>
-            
-          </div>
-        </div>
-        
         <div class="filter-group" data-group="status" role="group" aria-label="Status filters">
           <div class="filter-group-title" id="status-filter-label">Status</div>
           <div class="filter-chips" role="group" aria-labelledby="status-filter-label">
@@ -4817,7 +4808,7 @@
           <div class="filter-group-title" id="health-filter-label">Health</div>
           <div class="filter-chips" role="group" aria-labelledby="health-filter-label">
             <button class="filter-chip" data-filter="flaky" data-group="health" onclick="toggleFilter(this)" aria-pressed="false">Flaky (1)</button>
-            <button class="filter-chip" data-filter="slow" data-group="health" onclick="toggleFilter(this)" aria-pressed="false">Slow (1)</button>
+            <button class="filter-chip" data-filter="slow" data-group="health" onclick="toggleFilter(this)" aria-pressed="false">Slow (0)</button>
             <button class="filter-chip" data-filter="new" data-group="health" onclick="toggleFilter(this)" aria-pressed="false">New (0)</button>
           </div>
         </div>
@@ -4854,9 +4845,9 @@
         <div class="nav-section-title">Specs</div>
         <div class="file-tree">
           
-      <div class="file-tree-item all-passed" data-file="rsa.spec.js" onclick="filterByFile('rsa.spec.js')">
+      <div class="file-tree-item all-passed" data-file="test3.spec.js" onclick="filterByFile('test3.spec.js')">
         <span class="file-tree-icon">📄</span>
-        <span class="file-tree-name" title="rsa.spec.js">rsa.spec.js</span>
+        <span class="file-tree-name" title="test3.spec.js">test3.spec.js</span>
         <span class="file-tree-stats">
           <span class="file-stat passed">1</span>
           
@@ -4870,7 +4861,7 @@
       <div class="sidebar-footer">
         <div class="run-duration">
           <span class="duration-icon">⏱️</span>
-          <span class="duration-value">7.3s</span>
+          <span class="duration-value">45.5s</span>
         </div>
       </div>
     </aside>
@@ -4886,17 +4877,17 @@
           
     <!-- Hero Stats Row -->
     <div class="hero-stats">
-      <div class="hero-stat-card health fair">
+      <div class="hero-stat-card health good">
         <div class="health-gauge">
           <svg class="health-ring" viewBox="0 0 100 100">
             <circle class="health-ring-bg" cx="50" cy="50" r="42" />
             <circle class="health-ring-fill" cx="50" cy="50" r="42" 
-                    stroke-dasharray="132 264"
+                    stroke-dasharray="184.8 264"
                     stroke-dashoffset="0" />
           </svg>
           <div class="health-score">
-            <span class="health-grade">F</span>
-            <span class="health-value">50</span>
+            <span class="health-grade">C</span>
+            <span class="health-value">70</span>
           </div>
         </div>
         <div class="hero-stat-info">
@@ -4904,7 +4895,7 @@
           <div class="health-breakdown">
             <span>Pass: 100%</span>
             <span>Stability: 0%</span>
-            <span>Perf: 0%</span>
+            <span>Perf: 100%</span>
           </div>
         </div>
       </div>
@@ -4920,8 +4911,8 @@
 
       <div class="hero-stat-card">
         <div class="hero-stat-main">
-          <div class="hero-stat-value">7.3s</div>
-          <div class="hero-stat-delta negative">↑58%</div>
+          <div class="hero-stat-value">45.5s</div>
+          <div class="hero-stat-delta positive">↓6%</div>
         </div>
         <div class="hero-stat-label">Duration</div>
         <div class="hero-stat-detail">Total run time</div>
@@ -4963,12 +4954,6 @@
       <div class="attention-grid">
         
         
-          <div class="attention-card warning" onclick="filterTests('regression'); switchView('tests');">
-            <div class="attention-value">1</div>
-            <div class="attention-label">Performance Regressions</div>
-            <div class="attention-desc">Tests that got slower</div>
-          </div>
-        
         
           <div class="attention-card warning" onclick="filterTests('flaky'); switchView('tests');">
             <div class="attention-value">1</div>
@@ -4991,22 +4976,22 @@
       </div>
       <div class="insights-grid">
         
-          <div class="insight-card" onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential'); switchView('tests');">
+          <div class="insight-card" onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential'); switchView('tests');">
             <div class="insight-icon">🐢</div>
             <div class="insight-content">
               <div class="insight-label">Slowest Test</div>
               <div class="insight-title">@sanity Valid User Login With Credential</div>
-              <div class="insight-value">5.7s</div>
+              <div class="insight-value">44.4s</div>
             </div>
           </div>
         
         
-          <div class="insight-card" onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential'); switchView('tests');">
+          <div class="insight-card" onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential'); switchView('tests');">
             <div class="insight-icon">⚡</div>
             <div class="insight-content">
               <div class="insight-label">Most Flaky Test</div>
               <div class="insight-title">@sanity Valid User Login With Credential</div>
-              <div class="insight-value">60% failure rate</div>
+              <div class="insight-value">67% failure rate</div>
             </div>
           </div>
         
@@ -5027,8 +5012,8 @@
             <div class="insight-label">Pass Rate Trend</div>
             <div class="mini-sparkline">
               
-                <div class="spark-col" title="Run 1: 100%">
-                  <div class="spark-bar" style="height: 100%"></div>
+                <div class="spark-col" title="Run 1: 0%">
+                  <div class="spark-bar" style="height: 0%"></div>
                 </div>
               
                 <div class="spark-col" title="Run 2: 0%">
@@ -5047,8 +5032,8 @@
                   <div class="spark-bar" style="height: 100%"></div>
                 </div>
               
-                <div class="spark-col" title="Run 6: 0%">
-                  <div class="spark-bar" style="height: 0%"></div>
+                <div class="spark-col" title="Run 6: 100%">
+                  <div class="spark-bar" style="height: 100%"></div>
                 </div>
               
                 <div class="spark-col" title="Run 7: 100%">
@@ -5105,40 +5090,40 @@
                 <div role="list" aria-label="All tests">
                   
       <div class="test-list-item passed"
-           id="list-item-rsa_spec_js___sanity_Valid_User_Login_With_Credential"
+           id="list-item-test3_spec_js___sanity_Valid_User_Login_With_Credential"
            role="listitem"
            aria-label="@sanity Valid User Login With Credential - Passed"
-           data-testid="rsa.spec.js::@sanity Valid User Login With Credential"
+           data-testid="test3.spec.js::@sanity Valid User Login With Credential"
            data-status="passed"
            data-flaky="true"
-           data-slow="true"
+           data-slow="false"
            data-new="false"
            data-new-failure="false"
-           data-regression="true"
+           data-regression="false"
            data-fixed="false"
-           data-file="rsa.spec.js"
-           data-grade="F"
+           data-file="test3.spec.js"
+           data-grade="C"
            data-tags="@sanity"
            data-suite="Login Functionalaity"
-           data-suites="chromium,rsa.spec.js,Login Functionalaity"
-           onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')"
+           data-suites="chromium,test3.spec.js,Login Functionalaity"
+           onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')"
            tabindex="0"
-           onkeydown="if(event.key==='Enter')selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')">
+           onkeydown="if(event.key==='Enter')selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')">
         <div class="test-item-status" aria-hidden="true">
           <div class="status-dot passed"></div>
         </div>
         <div class="test-item-info">
           <div class="test-item-title">@sanity Valid User Login With Credential</div>
-          <div class="test-item-file">rsa.spec.js</div>
+          <div class="test-item-file">test3.spec.js</div>
         </div>
         <div class="test-item-meta">
           
-          <span class="test-item-badge regression">Regression</span>
           
-          <span class="stability-badge grade-f">F</span>
-          <span class="test-item-duration">5.7s</span>
+          
+          <span class="stability-badge grade-c">C</span>
+          <span class="test-item-duration">44.4s</span>
           <span class="test-item-badge flaky">Flaky</span>
-          <span class="test-item-badge slow">Slow</span>
+          
           
         </div>
       </div>
@@ -5148,10 +5133,10 @@
               <!-- By Spec Tab -->
               <div class="test-tab-content" id="tab-by-file" role="tabpanel" aria-labelledby="tab-by-file-label">
                 
-    <div id="group-rsa_spec_js" class="file-group">
-      <div class="file-group-header" onclick="toggleGroup('rsa_spec_js')">
+    <div id="group-test3_spec_js" class="file-group">
+      <div class="file-group-header" onclick="toggleGroup('test3_spec_js')">
         <span class="expand-icon">▼</span>
-        <span class="file-group-name">📄 rsa.spec.js</span>
+        <span class="file-group-name">📄 test3.spec.js</span>
         <div class="file-group-stats">
           <span class="file-group-stat passed">1 passed</span>
           
@@ -5160,18 +5145,18 @@
       <div class="file-group-content">
         
         <div class="test-list-item passed" 
-             id="list-item-rsa_spec_js___sanity_Valid_User_Login_With_Credential"
-             data-testid="rsa.spec.js::@sanity Valid User Login With Credential"
+             id="list-item-test3_spec_js___sanity_Valid_User_Login_With_Credential"
+             data-testid="test3.spec.js::@sanity Valid User Login With Credential"
              data-status="passed"
              data-flaky="true"
-             data-slow="true"
+             data-slow="false"
              data-new="false"
              data-new-failure="false"
-             data-regression="true"
+             data-regression="false"
              data-fixed="false"
-             data-file="rsa.spec.js"
-             data-grade="F"
-             onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')">
+             data-file="test3.spec.js"
+             data-grade="C"
+             onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')">
           <div class="test-item-status">
             <div class="status-dot passed"></div>
           </div>
@@ -5180,12 +5165,12 @@
           </div>
           <div class="test-item-meta">
             
-            <span class="test-item-badge regression">Regression</span>
             
-            <span class="stability-badge grade-f">F</span>
-            <span class="test-item-duration">5.7s</span>
+            
+            <span class="stability-badge grade-c">C</span>
+            <span class="test-item-duration">44.4s</span>
             <span class="test-item-badge flaky">Flaky</span>
-            <span class="test-item-badge slow">Slow</span>
+            
             
           </div>
         </div>
@@ -5210,40 +5195,40 @@
                   </div>
                   
       <div class="test-list-item passed"
-           id="list-item-rsa_spec_js___sanity_Valid_User_Login_With_Credential"
+           id="list-item-test3_spec_js___sanity_Valid_User_Login_With_Credential"
            role="listitem"
            aria-label="@sanity Valid User Login With Credential - Passed"
-           data-testid="rsa.spec.js::@sanity Valid User Login With Credential"
+           data-testid="test3.spec.js::@sanity Valid User Login With Credential"
            data-status="passed"
            data-flaky="true"
-           data-slow="true"
+           data-slow="false"
            data-new="false"
            data-new-failure="false"
-           data-regression="true"
+           data-regression="false"
            data-fixed="false"
-           data-file="rsa.spec.js"
-           data-grade="F"
+           data-file="test3.spec.js"
+           data-grade="C"
            data-tags="@sanity"
            data-suite="Login Functionalaity"
-           data-suites="chromium,rsa.spec.js,Login Functionalaity"
-           onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')"
+           data-suites="chromium,test3.spec.js,Login Functionalaity"
+           onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')"
            tabindex="0"
-           onkeydown="if(event.key==='Enter')selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')">
+           onkeydown="if(event.key==='Enter')selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')">
         <div class="test-item-status" aria-hidden="true">
           <div class="status-dot passed"></div>
         </div>
         <div class="test-item-info">
           <div class="test-item-title">@sanity Valid User Login With Credential</div>
-          <div class="test-item-file">rsa.spec.js</div>
+          <div class="test-item-file">test3.spec.js</div>
         </div>
         <div class="test-item-meta">
           
-          <span class="test-item-badge regression">Regression</span>
           
-          <span class="stability-badge grade-f">F</span>
-          <span class="test-item-duration">5.7s</span>
+          
+          <span class="stability-badge grade-c">C</span>
+          <span class="test-item-duration">44.4s</span>
           <span class="test-item-badge flaky">Flaky</span>
-          <span class="test-item-badge slow">Slow</span>
+          
           
         </div>
       </div>
@@ -5260,47 +5245,47 @@
               <!-- By Stability Tab -->
               <div class="test-tab-content" id="tab-by-stability">
                 
-                    <div class="stability-group grade-f-group">
+                    <div class="stability-group grade-c-group">
                       <div class="stability-group-header">
-                        <span class="stability-badge f">F</span>
-                        <span class="stability-group-title">Grade F (1)</span>
+                        <span class="stability-badge c">C</span>
+                        <span class="stability-group-title">Grade C (1)</span>
                       </div>
                       
       <div class="test-list-item passed"
-           id="list-item-rsa_spec_js___sanity_Valid_User_Login_With_Credential"
+           id="list-item-test3_spec_js___sanity_Valid_User_Login_With_Credential"
            role="listitem"
            aria-label="@sanity Valid User Login With Credential - Passed"
-           data-testid="rsa.spec.js::@sanity Valid User Login With Credential"
+           data-testid="test3.spec.js::@sanity Valid User Login With Credential"
            data-status="passed"
            data-flaky="true"
-           data-slow="true"
+           data-slow="false"
            data-new="false"
            data-new-failure="false"
-           data-regression="true"
+           data-regression="false"
            data-fixed="false"
-           data-file="rsa.spec.js"
-           data-grade="F"
+           data-file="test3.spec.js"
+           data-grade="C"
            data-tags="@sanity"
            data-suite="Login Functionalaity"
-           data-suites="chromium,rsa.spec.js,Login Functionalaity"
-           onclick="selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')"
+           data-suites="chromium,test3.spec.js,Login Functionalaity"
+           onclick="selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')"
            tabindex="0"
-           onkeydown="if(event.key==='Enter')selectTest('rsa_spec_js___sanity_Valid_User_Login_With_Credential')">
+           onkeydown="if(event.key==='Enter')selectTest('test3_spec_js___sanity_Valid_User_Login_With_Credential')">
         <div class="test-item-status" aria-hidden="true">
           <div class="status-dot passed"></div>
         </div>
         <div class="test-item-info">
           <div class="test-item-title">@sanity Valid User Login With Credential</div>
-          <div class="test-item-file">rsa.spec.js</div>
+          <div class="test-item-file">test3.spec.js</div>
         </div>
         <div class="test-item-meta">
           
-          <span class="test-item-badge regression">Regression</span>
           
-          <span class="stability-badge grade-f">F</span>
-          <span class="test-item-duration">5.7s</span>
+          
+          <span class="stability-badge grade-c">C</span>
+          <span class="test-item-duration">44.4s</span>
           <span class="test-item-badge flaky">Flaky</span>
-          <span class="test-item-badge slow">Slow</span>
+          
           
         </div>
       </div>
@@ -5370,12 +5355,12 @@
 
         <!-- Bars -->
         
-        <g class="bar-group clickable" data-tooltip="Jan 24: 100%" data-runid="run-1769252939295" onclick="loadHistoricalRun('run-1769252939295', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769676236507" onclick="loadHistoricalRun('run-1769676236507', 'Jan 29')">
           <rect
             x="52.0"
-            y="20.0"
+            y="90.0"
             width="26.0"
-            height="70.0"
+            height="0.0"
             fill="#22c55e"
             opacity="0.85"
             stroke="none"
@@ -5386,7 +5371,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769253054113" onclick="loadHistoricalRun('run-1769253054113', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769676430831" onclick="loadHistoricalRun('run-1769676430831', 'Jan 29')">
           <rect
             x="82.0"
             y="90.0"
@@ -5402,7 +5387,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769253097724" onclick="loadHistoricalRun('run-1769253097724', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769676539992" onclick="loadHistoricalRun('run-1769676539992', 'Jan 29')">
           <rect
             x="112.0"
             y="90.0"
@@ -5418,7 +5403,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769253113711" onclick="loadHistoricalRun('run-1769253113711', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769676598166" onclick="loadHistoricalRun('run-1769676598166', 'Jan 29')">
           <rect
             x="142.0"
             y="90.0"
@@ -5434,7 +5419,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 100%" data-runid="run-1769253163324" onclick="loadHistoricalRun('run-1769253163324', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 100%" data-runid="run-1769676752561" onclick="loadHistoricalRun('run-1769676752561', 'Jan 29')">
           <rect
             x="172.0"
             y="20.0"
@@ -5450,12 +5435,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769277694452" onclick="loadHistoricalRun('run-1769277694452', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 100%" data-runid="run-1769677077508" onclick="loadHistoricalRun('run-1769677077508', 'Jan 29')">
           <rect
             x="202.0"
-            y="90.0"
+            y="20.0"
             width="26.0"
-            height="0.0"
+            height="70.0"
             fill="#22c55e"
             opacity="0.85"
             stroke="none"
@@ -5466,7 +5451,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 100%" data-runid="run-1769277779471" onclick="loadHistoricalRun('run-1769277779471', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 100%" data-runid="run-1769677614618" onclick="loadHistoricalRun('run-1769677614618', 'Jan 29')">
           <rect
             x="232.0"
             y="20.0"
@@ -5482,7 +5467,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769279081119" onclick="loadHistoricalRun('run-1769279081119', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769683755469" onclick="loadHistoricalRun('run-1769683755469', 'Jan 29')">
           <rect
             x="262.0"
             y="90.0"
@@ -5498,7 +5483,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0%" data-runid="run-1769279355258" onclick="loadHistoricalRun('run-1769279355258', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0%" data-runid="run-1769683861864" onclick="loadHistoricalRun('run-1769683861864', 'Jan 29')">
           <rect
             x="292.0"
             y="90.0"
@@ -5514,7 +5499,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 25: 100%" data-runid="run-1769282496922" onclick="loadHistoricalRun('run-1769282496922', 'Jan 25')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 100%" data-runid="run-1769684528881" onclick="loadHistoricalRun('run-1769684528881', 'Jan 29')">
           <rect
             x="322.0"
             y="20.0"
@@ -5548,7 +5533,7 @@
       
 
         <!-- X-axis labels -->
-        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
+        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
 
         <!-- X-axis line -->
         <line x1="50" y1="90" x2="380" y2="90" stroke="var(--border-subtle)" stroke-width="1"/>
@@ -5568,29 +5553,29 @@
         <text x="42" y="94.0" fill="var(--text-muted)" font-size="10" text-anchor="end">0</text>
       
         <line x1="50" y1="76.0" x2="380" y2="76.0" stroke="var(--border-subtle)" stroke-width="1" opacity="0.2"/>
-        <text x="42" y="80.0" fill="var(--text-muted)" font-size="10" text-anchor="end">5</text>
+        <text x="42" y="80.0" fill="var(--text-muted)" font-size="10" text-anchor="end">10</text>
       
         <line x1="50" y1="62.0" x2="380" y2="62.0" stroke="var(--border-subtle)" stroke-width="1" opacity="0.2"/>
-        <text x="42" y="66.0" fill="var(--text-muted)" font-size="10" text-anchor="end">11</text>
+        <text x="42" y="66.0" fill="var(--text-muted)" font-size="10" text-anchor="end">20</text>
       
         <line x1="50" y1="48.0" x2="380" y2="48.0" stroke="var(--border-subtle)" stroke-width="1" opacity="0.2"/>
-        <text x="42" y="52.0" fill="var(--text-muted)" font-size="10" text-anchor="end">16</text>
+        <text x="42" y="52.0" fill="var(--text-muted)" font-size="10" text-anchor="end">29</text>
       
         <line x1="50" y1="34.0" x2="380" y2="34.0" stroke="var(--border-subtle)" stroke-width="1" opacity="0.2"/>
-        <text x="42" y="38.0" fill="var(--text-muted)" font-size="10" text-anchor="end">22</text>
+        <text x="42" y="38.0" fill="var(--text-muted)" font-size="10" text-anchor="end">39</text>
       
         <line x1="50" y1="20.0" x2="380" y2="20.0" stroke="var(--border-subtle)" stroke-width="1" opacity="0.2"/>
-        <text x="42" y="24.0" fill="var(--text-muted)" font-size="10" text-anchor="end">27</text>
+        <text x="42" y="24.0" fill="var(--text-muted)" font-size="10" text-anchor="end">49</text>
       
 
         <!-- Bars -->
         
-        <g class="bar-group clickable" data-tooltip="Jan 24: 21s" data-runid="run-1769252939295" onclick="loadHistoricalRun('run-1769252939295', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 47s" data-runid="run-1769676236507" onclick="loadHistoricalRun('run-1769676236507', 'Jan 29')">
           <rect
             x="52.0"
-            y="35.6"
+            y="22.9"
             width="26.0"
-            height="54.4"
+            height="67.1"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5601,12 +5586,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0s" data-runid="run-1769253054113" onclick="loadHistoricalRun('run-1769253054113', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 47s" data-runid="run-1769676430831" onclick="loadHistoricalRun('run-1769676430831', 'Jan 29')">
           <rect
             x="82.0"
-            y="90.0"
+            y="22.9"
             width="26.0"
-            height="0.0"
+            height="67.1"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5617,12 +5602,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0s" data-runid="run-1769253097724" onclick="loadHistoricalRun('run-1769253097724', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 47s" data-runid="run-1769676539992" onclick="loadHistoricalRun('run-1769676539992', 'Jan 29')">
           <rect
             x="112.0"
-            y="90.0"
+            y="22.9"
             width="26.0"
-            height="0.0"
+            height="67.1"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5633,12 +5618,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0s" data-runid="run-1769253113711" onclick="loadHistoricalRun('run-1769253113711', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 35s" data-runid="run-1769676598166" onclick="loadHistoricalRun('run-1769676598166', 'Jan 29')">
           <rect
             x="142.0"
-            y="90.0"
+            y="40.0"
             width="26.0"
-            height="0.0"
+            height="50.0"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5649,12 +5634,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 26s" data-runid="run-1769253163324" onclick="loadHistoricalRun('run-1769253163324', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 29s" data-runid="run-1769676752561" onclick="loadHistoricalRun('run-1769676752561', 'Jan 29')">
           <rect
             x="172.0"
-            y="22.6"
+            y="48.6"
             width="26.0"
-            height="67.4"
+            height="41.4"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5665,12 +5650,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 5s" data-runid="run-1769277694452" onclick="loadHistoricalRun('run-1769277694452', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 29s" data-runid="run-1769677077508" onclick="loadHistoricalRun('run-1769677077508', 'Jan 29')">
           <rect
             x="202.0"
-            y="77.0"
+            y="48.6"
             width="26.0"
-            height="13.0"
+            height="41.4"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5681,12 +5666,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 5s" data-runid="run-1769277779471" onclick="loadHistoricalRun('run-1769277779471', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 31s" data-runid="run-1769677614618" onclick="loadHistoricalRun('run-1769677614618', 'Jan 29')">
           <rect
             x="232.0"
-            y="77.0"
+            y="45.7"
             width="26.0"
-            height="13.0"
+            height="44.3"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5697,12 +5682,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 4s" data-runid="run-1769279081119" onclick="loadHistoricalRun('run-1769279081119', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 47s" data-runid="run-1769683755469" onclick="loadHistoricalRun('run-1769683755469', 'Jan 29')">
           <rect
             x="262.0"
-            y="79.6"
+            y="22.9"
             width="26.0"
-            height="10.4"
+            height="67.1"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5713,12 +5698,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 4s" data-runid="run-1769279355258" onclick="loadHistoricalRun('run-1769279355258', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 36s" data-runid="run-1769683861864" onclick="loadHistoricalRun('run-1769683861864', 'Jan 29')">
           <rect
             x="292.0"
-            y="79.6"
+            y="38.6"
             width="26.0"
-            height="10.4"
+            height="51.4"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5729,12 +5714,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 25: 5s" data-runid="run-1769282496922" onclick="loadHistoricalRun('run-1769282496922', 'Jan 25')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 48s" data-runid="run-1769684528881" onclick="loadHistoricalRun('run-1769684528881', 'Jan 29')">
           <rect
             x="322.0"
-            y="77.0"
+            y="21.4"
             width="26.0"
-            height="13.0"
+            height="68.6"
             fill="#a855f7"
             opacity="0.85"
             stroke="none"
@@ -5745,12 +5730,12 @@
           />
         </g>
       
-        <g class="bar-group" data-tooltip="Current: 7s" >
+        <g class="bar-group" data-tooltip="Current: 45s" >
           <rect
             x="352.0"
-            y="71.9"
+            y="25.7"
             width="26.0"
-            height="18.1"
+            height="64.3"
             fill="#a855f7"
             opacity="1"
             stroke="var(--text-primary)"
@@ -5763,7 +5748,7 @@
       
 
         <!-- X-axis labels -->
-        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
+        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
 
         <!-- X-axis line -->
         <line x1="50" y1="90" x2="380" y2="90" stroke="var(--border-subtle)" stroke-width="1"/>
@@ -5800,12 +5785,12 @@
 
         <!-- Bars -->
         
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769252939295" onclick="loadHistoricalRun('run-1769252939295', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676236507" onclick="loadHistoricalRun('run-1769676236507', 'Jan 29')">
           <rect
             x="52.0"
-            y="20.0"
+            y="90.0"
             width="26.0"
-            height="70.0"
+            height="0.0"
             fill="#eab308"
             opacity="0.85"
             stroke="none"
@@ -5816,7 +5801,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253054113" onclick="loadHistoricalRun('run-1769253054113', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676430831" onclick="loadHistoricalRun('run-1769676430831', 'Jan 29')">
           <rect
             x="82.0"
             y="90.0"
@@ -5832,7 +5817,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253097724" onclick="loadHistoricalRun('run-1769253097724', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676539992" onclick="loadHistoricalRun('run-1769676539992', 'Jan 29')">
           <rect
             x="112.0"
             y="90.0"
@@ -5848,12 +5833,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253113711" onclick="loadHistoricalRun('run-1769253113711', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769676598166" onclick="loadHistoricalRun('run-1769676598166', 'Jan 29')">
           <rect
             x="142.0"
-            y="90.0"
+            y="20.0"
             width="26.0"
-            height="0.0"
+            height="70.0"
             fill="#eab308"
             opacity="0.85"
             stroke="none"
@@ -5864,7 +5849,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769253163324" onclick="loadHistoricalRun('run-1769253163324', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769676752561" onclick="loadHistoricalRun('run-1769676752561', 'Jan 29')">
           <rect
             x="172.0"
             y="20.0"
@@ -5880,12 +5865,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769277694452" onclick="loadHistoricalRun('run-1769277694452', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769677077508" onclick="loadHistoricalRun('run-1769677077508', 'Jan 29')">
           <rect
             x="202.0"
-            y="90.0"
+            y="20.0"
             width="26.0"
-            height="0.0"
+            height="70.0"
             fill="#eab308"
             opacity="0.85"
             stroke="none"
@@ -5896,7 +5881,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769277779471" onclick="loadHistoricalRun('run-1769277779471', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769677614618" onclick="loadHistoricalRun('run-1769677614618', 'Jan 29')">
           <rect
             x="232.0"
             y="20.0"
@@ -5912,12 +5897,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769279081119" onclick="loadHistoricalRun('run-1769279081119', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769683755469" onclick="loadHistoricalRun('run-1769683755469', 'Jan 29')">
           <rect
             x="262.0"
-            y="20.0"
+            y="90.0"
             width="26.0"
-            height="70.0"
+            height="0.0"
             fill="#eab308"
             opacity="0.85"
             stroke="none"
@@ -5928,7 +5913,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769279355258" onclick="loadHistoricalRun('run-1769279355258', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769683861864" onclick="loadHistoricalRun('run-1769683861864', 'Jan 29')">
           <rect
             x="292.0"
             y="20.0"
@@ -5944,7 +5929,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 25: 1" data-runid="run-1769282496922" onclick="loadHistoricalRun('run-1769282496922', 'Jan 25')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769684528881" onclick="loadHistoricalRun('run-1769684528881', 'Jan 29')">
           <rect
             x="322.0"
             y="20.0"
@@ -5978,7 +5963,7 @@
       
 
         <!-- X-axis labels -->
-        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
+        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
 
         <!-- X-axis line -->
         <line x1="50" y1="90" x2="380" y2="90" stroke="var(--border-subtle)" stroke-width="1"/>
@@ -6015,7 +6000,7 @@
 
         <!-- Bars -->
         
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769252939295" onclick="loadHistoricalRun('run-1769252939295', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676236507" onclick="loadHistoricalRun('run-1769676236507', 'Jan 29')">
           <rect
             x="52.0"
             y="90.0"
@@ -6031,7 +6016,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253054113" onclick="loadHistoricalRun('run-1769253054113', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676430831" onclick="loadHistoricalRun('run-1769676430831', 'Jan 29')">
           <rect
             x="82.0"
             y="90.0"
@@ -6047,7 +6032,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253097724" onclick="loadHistoricalRun('run-1769253097724', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676539992" onclick="loadHistoricalRun('run-1769676539992', 'Jan 29')">
           <rect
             x="112.0"
             y="90.0"
@@ -6063,7 +6048,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769253113711" onclick="loadHistoricalRun('run-1769253113711', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676598166" onclick="loadHistoricalRun('run-1769676598166', 'Jan 29')">
           <rect
             x="142.0"
             y="90.0"
@@ -6079,12 +6064,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 1" data-runid="run-1769253163324" onclick="loadHistoricalRun('run-1769253163324', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769676752561" onclick="loadHistoricalRun('run-1769676752561', 'Jan 29')">
           <rect
             x="172.0"
-            y="20.0"
+            y="90.0"
             width="26.0"
-            height="70.0"
+            height="0.0"
             fill="#f97316"
             opacity="0.85"
             stroke="none"
@@ -6095,7 +6080,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769277694452" onclick="loadHistoricalRun('run-1769277694452', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769677077508" onclick="loadHistoricalRun('run-1769677077508', 'Jan 29')">
           <rect
             x="202.0"
             y="90.0"
@@ -6111,7 +6096,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769277779471" onclick="loadHistoricalRun('run-1769277779471', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769677614618" onclick="loadHistoricalRun('run-1769677614618', 'Jan 29')">
           <rect
             x="232.0"
             y="90.0"
@@ -6127,7 +6112,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769279081119" onclick="loadHistoricalRun('run-1769279081119', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769683755469" onclick="loadHistoricalRun('run-1769683755469', 'Jan 29')">
           <rect
             x="262.0"
             y="90.0"
@@ -6143,7 +6128,7 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 24: 0" data-runid="run-1769279355258" onclick="loadHistoricalRun('run-1769279355258', 'Jan 24')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 0" data-runid="run-1769683861864" onclick="loadHistoricalRun('run-1769683861864', 'Jan 29')">
           <rect
             x="292.0"
             y="90.0"
@@ -6159,12 +6144,12 @@
           />
         </g>
       
-        <g class="bar-group clickable" data-tooltip="Jan 25: 0" data-runid="run-1769282496922" onclick="loadHistoricalRun('run-1769282496922', 'Jan 25')">
+        <g class="bar-group clickable" data-tooltip="Jan 29: 1" data-runid="run-1769684528881" onclick="loadHistoricalRun('run-1769684528881', 'Jan 29')">
           <rect
             x="322.0"
-            y="90.0"
+            y="20.0"
             width="26.0"
-            height="0.0"
+            height="70.0"
             fill="#f97316"
             opacity="0.85"
             stroke="none"
@@ -6175,12 +6160,12 @@
           />
         </g>
       
-        <g class="bar-group" data-tooltip="Current: 1" >
+        <g class="bar-group" data-tooltip="Current: 0" >
           <rect
             x="352.0"
-            y="20.0"
+            y="90.0"
             width="26.0"
-            height="70.0"
+            height="0.0"
             fill="#f97316"
             opacity="1"
             stroke="var(--text-primary)"
@@ -6193,7 +6178,7 @@
       
 
         <!-- X-axis labels -->
-        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 24</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
+        <text x="65.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="125.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="185.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="245.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="305.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Jan 29</text><text x="365.0" y="112" fill="var(--text-muted)" font-size="9" text-anchor="middle">Now</text>
 
         <!-- X-axis line -->
         <line x1="50" y1="90" x2="380" y2="90" stroke="var(--border-subtle)" stroke-width="1"/>
@@ -6218,7 +6203,7 @@
       <div class="comparison-header">
         <div class="comparison-title">🔄 Run Comparison</div>
         <div class="comparison-subtitle">
-          Baseline: 1/25/2026 vs Current
+          Baseline: 1/29/2026 vs Current
         </div>
       </div>
 
@@ -6236,10 +6221,10 @@
 
         <div class="comparison-card">
           <div class="comparison-card-label">Duration</div>
-          <div class="comparison-card-value negative">
-            7.3s
+          <div class="comparison-card-value positive">
+            45.4s
             <span class="comparison-delta">
-              ↑ 58.1%
+              ↓ -6.2%
             </span>
           </div>
         </div>
@@ -6270,38 +6255,6 @@
         
         
         
-    <div class="comparison-section-wrapper">
-      <div class="comparison-section-header regression-section" onclick="toggleComparisonSection('___Performance_Regressions')">
-        <span class="expand-icon">▼</span>
-        <span class="comparison-section-title">🐢 Performance Regressions</span>
-        <span class="comparison-section-count">1</span>
-      </div>
-      <div id="section-___Performance_Regressions" class="comparison-section-content">
-        
-    <div class="comparison-item" id="comparison-rsa_spec_js___sanity_Valid_User_Login_With_Credential">
-      <div class="comparison-item-header">
-        <div class="comparison-item-status passed"></div>
-        <div class="comparison-item-info">
-          <div class="comparison-item-title">@sanity Valid User Login With Credential</div>
-          <div class="comparison-item-file">rsa.spec.js</div>
-        </div>
-        <div class="comparison-item-duration-badge">5.7s</div>
-      </div>
-      
-      <div class="comparison-item-details">
-        <span class="comparison-item-duration">
-          3.1s → 5.7s
-        </span>
-        <span class="comparison-item-change negative">
-          ↑ 86.4%
-        </span>
-      </div>
-    
-    </div>
-  
-      </div>
-    </div>
-  
         
         
       </div>
@@ -6343,48 +6296,48 @@
   <!-- Hidden data containers for detail rendering -->
   <div id="test-cards-data" style="display: none;">
     
-    <div id="card-rsa_spec_js___sanity_Valid_User_Login_With_Credential" class="test-card"
+    <div id="card-test3_spec_js___sanity_Valid_User_Login_With_Credential" class="test-card"
          data-status="passed"
          data-flaky="true"
          data-unstable="false"
-         data-slow="true"
+         data-slow="false"
          data-new="false"
-         data-grade="F" data-tags="@sanity" data-suite="Login Functionalaity" data-suites="chromium,rsa.spec.js,Login Functionalaity">
-      <div class="test-card-header" onclick="toggleDetails('rsa_spec_js___sanity_Valid_User_Login_With_Credential', event)">
+         data-grade="C" data-tags="@sanity" data-suite="Login Functionalaity" data-suites="chromium,test3.spec.js,Login Functionalaity">
+      <div class="test-card-header" onclick="toggleDetails('test3_spec_js___sanity_Valid_User_Login_With_Credential', event)">
         <div class="test-card-left">
           <div class="status-indicator passed"></div>
           <div class="test-info">
             <div class="test-title-row">
               <span class="test-title">@sanity Valid User Login With Credential</span>
-              <span class="test-suite-badge" title="Suite: chromium > rsa.spec.js > Login Functionalaity">Login Functionalaity</span>
+              <span class="test-suite-badge" title="Suite: chromium > test3.spec.js > Login Functionalaity">Login Functionalaity</span>
             </div>
             <div class="test-meta-row">
-              <span class="test-file">rsa.spec.js</span>
+              <span class="test-file">test3.spec.js</span>
               <div class="test-tags"><span class="test-tag">@sanity</span></div>
             </div>
           </div>
         </div>
         <div class="test-card-right">
-          <span class="test-duration">5.7s</span>
-          <span class="badge stability-low" title="Stability Score: 54/100 (Flakiness: 40, Performance: 25, Reliability: 100)">F (54)</span>
+          <span class="test-duration">44.4s</span>
+          <span class="badge stability-medium" title="Stability Score: 70/100 (Flakiness: 33, Performance: 90, Reliability: 100)">C (70)</span>
           <span class="badge flaky">Flaky</span>
-          <span class="trend slower">↑ 87% slower</span>
+          <span class="trend stable">→ Stable</span>
           <span class="expand-icon">▶</span>
         </div>
       </div>
       <div class="test-details">
 	      <div class="detail-section">
-	        <div class="detail-label"><span class="icon">📊</span> Run History (Last 5 runs)</div>
+	        <div class="detail-label"><span class="icon">📊</span> Run History (Last 3 runs)</div>
 	        <div class="history-section">
 	          <div class="history-column">
 	            <div class="history-label">Pass/Fail</div>
 	            <div class="sparkline-block">
 	              <div class="sparkline">
-	                <div class="spark-dot history-dot fail" data-runid="run-1769277694452" data-testid="rsa.spec.js::@sanity Valid User Login With Credential" data-ts="1/24/2026, 11:31:39 PM" title="Run 1: Failed • 1/24/2026, 11:31:39 PM"></div><div class="spark-dot history-dot pass" data-runid="run-1769277779471" data-testid="rsa.spec.js::@sanity Valid User Login With Credential" data-ts="1/24/2026, 11:33:04 PM" title="Run 2: Passed • 1/24/2026, 11:33:04 PM"></div><div class="spark-dot history-dot fail" data-runid="run-1769279081119" data-testid="rsa.spec.js::@sanity Valid User Login With Credential" data-ts="1/24/2026, 11:54:45 PM" title="Run 3: Failed • 1/24/2026, 11:54:45 PM"></div><div class="spark-dot history-dot fail" data-runid="run-1769279355258" data-testid="rsa.spec.js::@sanity Valid User Login With Credential" data-ts="1/24/2026, 11:59:19 PM" title="Run 4: Failed • 1/24/2026, 11:59:19 PM"></div><div class="spark-dot history-dot pass" data-runid="run-1769282496922" data-testid="rsa.spec.js::@sanity Valid User Login With Credential" data-ts="1/25/2026, 12:51:41 AM" title="Run 5: Passed • 1/25/2026, 12:51:41 AM"></div>
+	                <div class="spark-dot history-dot fail" data-runid="run-1769683755469" data-testid="test3.spec.js::@sanity Valid User Login With Credential" data-ts="1/29/2026, 4:20:02 PM" title="Run 1: Failed • 1/29/2026, 4:20:02 PM"></div><div class="spark-dot history-dot fail" data-runid="run-1769683861864" data-testid="test3.spec.js::@sanity Valid User Login With Credential" data-ts="1/29/2026, 4:21:37 PM" title="Run 2: Failed • 1/29/2026, 4:21:37 PM"></div><div class="spark-dot history-dot pass" data-runid="run-1769684528881" data-testid="test3.spec.js::@sanity Valid User Login With Credential" data-ts="1/29/2026, 4:32:57 PM" title="Run 3: Passed • 1/29/2026, 4:32:57 PM"></div>
 	                <div class="spark-dot pass current" title="Current: Passed"></div>
 	              </div>
 	              <div class="history-stats passfail">
-	                <span class="history-stat">Pass rate: <span>40%</span></span>
+	                <span class="history-stat">Pass rate: <span>33%</span></span>
 	                <button type="button" class="history-back-btn" data-action="history-back" style="display:none">Back to current</button>
 	              </div>
 	            </div>
@@ -6392,12 +6345,12 @@
 	          <div class="history-column">
 	            <div class="history-label">Duration Trend</div>
 	            <div class="duration-chart">
-	              <div class="duration-bar history-duration" data-runid="run-1769277694452" style="height: 18.1px" title="Run 1: 3.7s"></div><div class="duration-bar history-duration" data-runid="run-1769277779471" style="height: 15.1px" title="Run 2: 3.1s"></div><div class="duration-bar history-duration" data-runid="run-1769279081119" style="height: 13.2px" title="Run 3: 2.7s"></div><div class="duration-bar history-duration" data-runid="run-1769279355258" style="height: 13.6px" title="Run 4: 2.8s"></div><div class="duration-bar history-duration" data-runid="run-1769282496922" style="height: 15.0px" title="Run 5: 3.1s"></div>
-              <div class="duration-bar current slower" style="height: 28.0px" title="Current: 5.7s"></div>
+	              <div class="duration-bar history-duration" data-runid="run-1769683755469" style="height: 17.7px" title="Run 1: 30.0s"></div><div class="duration-bar history-duration" data-runid="run-1769683861864" style="height: 20.6px" title="Run 2: 35.0s"></div><div class="duration-bar history-duration" data-runid="run-1769684528881" style="height: 28.0px" title="Run 3: 47.5s"></div>
+              <div class="duration-bar current " style="height: 26.1px" title="Current: 44.4s"></div>
             </div>
             <div class="history-stats">
-              <span class="history-stat">Avg: <span data-role="avg-duration">3.1s</span></span>
-              <span class="history-stat">Current: <span data-role="current-duration">5.7s</span></span>
+              <span class="history-stat">Avg: <span data-role="avg-duration">37.5s</span></span>
+              <span class="history-stat">Current: <span data-role="current-duration">44.4s</span></span>
             </div>
           </div>
         </div>
@@ -6410,90 +6363,225 @@
             <div class="step-row ">
               <span class="step-title" title="Launch browser">Launch browser</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 8.9%"></div>
+                <div class="step-bar" style="width: 2.5%"></div>
               </div>
-              <span class="step-duration">269ms</span>
+              <span class="step-duration">167ms</span>
               
             </div>
           
             <div class="step-row ">
               <span class="step-title" title="Create context">Create context</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 0.4%"></div>
+                <div class="step-bar" style="width: 0.1%"></div>
               </div>
-              <span class="step-duration">12ms</span>
+              <span class="step-duration">10ms</span>
               
             </div>
           
             <div class="step-row ">
               <span class="step-title" title="Create page">Create page</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 5.6%"></div>
+                <div class="step-bar" style="width: 9.9%"></div>
               </div>
-              <span class="step-duration">169ms</span>
+              <span class="step-duration">665ms</span>
               
             </div>
           
             <div class="step-row ">
-              <span class="step-title" title="Navigate to &quot;/AutomationPractice/&quot;">Navigate to &quot;/AutomationPractice/&quot;</span>
+              <span class="step-title" title="Navigate to &quot;/vminet.html&quot;">Navigate to &quot;/vminet.html&quot;</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 69.8%"></div>
+                <div class="step-bar" style="width: 69.9%"></div>
               </div>
-              <span class="step-duration">2.1s</span>
+              <span class="step-duration">4.7s</span>
               
             </div>
           
             <div class="step-row ">
-              <span class="step-title" title="Check locator(&#039;//input[@value=\&#039;radio1\&#039;]&#039;)">Check locator(&#039;//input[@value=\&#039;radio1\&#039;]&#039;)</span>
+              <span class="step-title" title="Click locator(&#039;//a[text()=\&#039;/sampleDB\&#039;]&#039;)">Click locator(&#039;//a[text()=\&#039;/sampleDB\&#039;]&#039;)</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 7.0%"></div>
+                <div class="step-bar" style="width: 10.3%"></div>
               </div>
-              <span class="step-duration">211ms</span>
+              <span class="step-duration">691ms</span>
               
             </div>
           
             <div class="step-row ">
-              <span class="step-title" title="Check locator(&#039;//input[@value=\&#039;radio2\&#039;]&#039;)">Check locator(&#039;//input[@value=\&#039;radio2\&#039;]&#039;)</span>
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 1.3%"></div>
+                <div class="step-bar" style="width: 74.7%"></div>
               </div>
-              <span class="step-duration">39ms</span>
+              <span class="step-duration">5.0s</span>
               
             </div>
           
             <div class="step-row ">
-              <span class="step-title" title="Check locator(&#039;//input[@value=\&#039;radio3\&#039;]&#039;)">Check locator(&#039;//input[@value=\&#039;radio3\&#039;]&#039;)</span>
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 1.8%"></div>
+                <div class="step-bar" style="width: 12.0%"></div>
               </div>
-              <span class="step-duration">55ms</span>
+              <span class="step-duration">806ms</span>
               
             </div>
           
             <div class="step-row ">
-              <span class="step-title" title="Select option locator(&#039;//select[@id=\&#039;dropdown-class-example\&#039;]&#039;)">Select option locator(&#039;//select[@id=\&#039;dropdown-class-example\&#039;]&#039;)</span>
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 0.3%"></div>
+                <div class="step-bar" style="width: 22.5%"></div>
               </div>
-              <span class="step-duration">8ms</span>
+              <span class="step-duration">1.5s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 12.0%"></div>
+              </div>
+              <span class="step-duration">808ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 22.5%"></div>
+              </div>
+              <span class="step-duration">1.5s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 29.9%"></div>
+              </div>
+              <span class="step-duration">2.0s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Query count locator(&#039;#nameField&#039;)">Query count locator(&#039;#nameField&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.2%"></div>
+              </div>
+              <span class="step-duration">13ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 44.8%"></div>
+              </div>
+              <span class="step-duration">3.0s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Query count locator(&#039;#nameField&#039;)">Query count locator(&#039;#nameField&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.0%"></div>
+              </div>
+              <span class="step-duration">2ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 44.9%"></div>
+              </div>
+              <span class="step-duration">3.0s</span>
               
             </div>
           
             <div class="step-row slowest">
-              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <span class="step-title" title="Query count locator(&#039;#nameField&#039;)">Query count locator(&#039;#nameField&#039;)</span>
               <div class="step-bar-container">
                 <div class="step-bar" style="width: 100.0%"></div>
               </div>
-              <span class="step-duration">3.0s</span>
+              <span class="step-duration">6.7s</span>
               <span class="slowest-badge">Slowest</span>
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 44.8%"></div>
+              </div>
+              <span class="step-duration">3.0s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Query count locator(&#039;#nameField&#039;)">Query count locator(&#039;#nameField&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.2%"></div>
+              </div>
+              <span class="step-duration">11ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Query count locator(&#039;//input[@id=\&#039;nameField\&#039;]&#039;)">Query count locator(&#039;//input[@id=\&#039;nameField\&#039;]&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.0%"></div>
+              </div>
+              <span class="step-duration">3ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Fill &quot;Administrator&quot; locator(&#039;//input[@id=\&#039;nameField\&#039;]&#039;)">Fill &quot;Administrator&quot; locator(&#039;//input[@id=\&#039;nameField\&#039;]&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.1%"></div>
+              </div>
+              <span class="step-duration">9ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Fill &quot;Password1!&quot; locator(&#039;//input[@id=\&#039;passwordField\&#039;]&#039;)">Fill &quot;Password1!&quot; locator(&#039;//input[@id=\&#039;passwordField\&#039;]&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 0.1%"></div>
+              </div>
+              <span class="step-duration">10ms</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Click locator(&#039;//button[text()=\&#039;OK\&#039;]&#039;)">Click locator(&#039;//button[text()=\&#039;OK\&#039;]&#039;)</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 36.2%"></div>
+              </div>
+              <span class="step-duration">2.4s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Wait for timeout">Wait for timeout</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 29.9%"></div>
+              </div>
+              <span class="step-duration">2.0s</span>
+              
+            </div>
+          
+            <div class="step-row ">
+              <span class="step-title" title="Screenshot">Screenshot</span>
+              <div class="step-bar-container">
+                <div class="step-bar" style="width: 67.9%"></div>
+              </div>
+              <span class="step-duration">4.6s</span>
+              
             </div>
           
             <div class="step-row ">
               <span class="step-title" title="Close context">Close context</span>
               <div class="step-bar-container">
-                <div class="step-bar" style="width: 1.8%"></div>
+                <div class="step-bar" style="width: 1.0%"></div>
               </div>
-              <span class="step-duration">53ms</span>
+              <span class="step-duration">67ms</span>
               
             </div>
           
@@ -6501,7 +6589,7 @@
       </div>
     
       <div class="duration-compare">
-        Average: 3.0s → Current: 5.7s
+        Average: 37.5s → Current: 44.4s
       </div>
     </div></div>
     </div>
@@ -6509,11 +6597,11 @@
   </div>
 
   <script>
-    const tests = [{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"passed","duration":5703,"retry":0,"steps":[{"title":"Launch browser","duration":269,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":169,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":2103,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":211,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio2\\']')","duration":39,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio3\\']')","duration":55,"category":"pw:api"},{"title":"Select option locator('//select[@id=\\'dropdown-class-example\\']')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":3015,"category":"pw:api","isSlowest":true},{"title":"Close context","duration":53,"category":"pw:api"}],"attachments":{"screenshots":[],"videos":[],"traces":[]},"history":[{"passed":false,"duration":3679,"timestamp":"2026-01-24T18:01:39.897Z","runId":"run-1769277694452","skipped":false,"retry":0},{"passed":true,"duration":3070,"timestamp":"2026-01-24T18:03:04.018Z","runId":"run-1769277779471","skipped":false,"retry":0},{"passed":false,"duration":2683,"timestamp":"2026-01-24T18:24:45.361Z","runId":"run-1769279081119","skipped":false,"retry":0},{"passed":false,"duration":2761,"timestamp":"2026-01-24T18:29:19.449Z","runId":"run-1769279355258","skipped":false,"retry":0},{"passed":true,"duration":3059,"timestamp":"2026-01-24T19:21:41.527Z","runId":"run-1769282496922","skipped":false,"retry":0}],"tags":["@sanity"],"suite":"Login Functionalaity","suites":["chromium","rsa.spec.js","Login Functionalaity"],"flakinessScore":0.6,"flakinessIndicator":"🔴 Flaky","averageDuration":3050,"performanceTrend":"↑ 87% slower","performanceMetrics":{"averageDuration":3050,"currentDuration":5703,"percentChange":87,"absoluteChange":2653,"threshold":0.2,"isRegression":true,"isImprovement":false,"severity":"high"},"retryInfo":{"totalRetries":0,"passedOnRetry":-1,"failedRetries":0,"retryPattern":[true],"needsAttention":false},"stabilityScore":{"overall":54,"flakiness":40,"performance":25,"reliability":100,"grade":"F","needsAttention":true}}];
-    const stats = {"passed":1,"failed":0,"skipped":0,"flaky":1,"slow":1,"newTests":0,"total":1,"passRate":100,"gradeA":0,"gradeB":0,"gradeC":0,"gradeD":0,"gradeF":1,"totalDuration":7282};
+    const tests = [{"testId":"test3.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test3.spec.js","status":"passed","duration":44366,"retry":0,"steps":[{"title":"Launch browser","duration":167,"category":"pw:api"},{"title":"Create context","duration":10,"category":"pw:api"},{"title":"Create page","duration":665,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":4688,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":691,"category":"pw:api"},{"title":"Wait for timeout","duration":5007,"category":"pw:api"},{"title":"Wait for timeout","duration":806,"category":"pw:api"},{"title":"Wait for timeout","duration":1512,"category":"pw:api"},{"title":"Wait for timeout","duration":808,"category":"pw:api"},{"title":"Wait for timeout","duration":1512,"category":"pw:api"},{"title":"Wait for timeout","duration":2003,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":13,"category":"pw:api"},{"title":"Wait for timeout","duration":3004,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":3011,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":6706,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":3001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":11,"category":"pw:api"},{"title":"Query count locator('//input[@id=\\'nameField\\']')","duration":3,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')","duration":9,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('//input[@id=\\'passwordField\\']')","duration":10,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":2425,"category":"pw:api"},{"title":"Wait for timeout","duration":2005,"category":"pw:api"},{"title":"Screenshot","duration":4552,"category":"pw:api"},{"title":"Close context","duration":67,"category":"pw:api"}],"attachments":{"screenshots":[],"videos":[],"traces":[]},"history":[{"passed":false,"duration":30047,"timestamp":"2026-01-29T10:50:02.339Z","runId":"run-1769683755469","skipped":false,"retry":0},{"passed":false,"duration":35031,"timestamp":"2026-01-29T10:51:37.903Z","runId":"run-1769683861864","skipped":false,"retry":0},{"passed":true,"duration":47515,"timestamp":"2026-01-29T11:02:57.348Z","runId":"run-1769684528881","skipped":false,"retry":0}],"tags":["@sanity"],"suite":"Login Functionalaity","suites":["chromium","test3.spec.js","Login Functionalaity"],"flakinessScore":0.67,"flakinessIndicator":"🔴 Flaky","averageDuration":37531,"performanceTrend":"→ Stable","performanceMetrics":{"averageDuration":37531,"currentDuration":44366,"percentChange":18.2,"absoluteChange":6835,"threshold":0.2,"isRegression":false,"isImprovement":false,"severity":"low"},"retryInfo":{"totalRetries":0,"passedOnRetry":-1,"failedRetries":0,"retryPattern":[true],"needsAttention":false},"stabilityScore":{"overall":70,"flakiness":33,"performance":90,"reliability":100,"grade":"C","needsAttention":false}}];
+    const stats = {"passed":1,"failed":0,"skipped":0,"flaky":1,"slow":0,"newTests":0,"total":1,"passRate":100,"gradeA":0,"gradeB":0,"gradeC":1,"gradeD":0,"gradeF":0,"totalDuration":45456};
     const traceViewerEnabled = true;
     const historyDrilldownEnabled = true;
-    const historyRunSnapshots = {"run-1769252939295":{"runId":"run-1769252939295","timestamp":"2026-01-24T11:08:59.295Z","tests":{"test1.spec.js::@sanity Valid User Login With Credential":{"testId":"test1.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test1.spec.js","status":"passed","duration":19514,"retry":0,"steps":[{"title":"Launch browser","duration":233,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":175,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":3816,"category":"pw:api"},{"title":"Click locator('text=/sampleDB')","duration":666,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')","duration":14308,"category":"pw:api","isSlowest":true},{"title":"Fill \"Password1!\" locator('//input[@id=\\'passwordField\\']')","duration":9,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":478,"category":"pw:api"},{"title":"Close context","duration":18,"category":"pw:api"}]}}},"run-1769253054113":{"runId":"run-1769253054113","timestamp":"2026-01-24T11:10:54.113Z","tests":{}},"run-1769253097724":{"runId":"run-1769253097724","timestamp":"2026-01-24T11:11:37.724Z","tests":{}},"run-1769253113711":{"runId":"run-1769253113711","timestamp":"2026-01-24T11:11:53.711Z","tests":{}},"run-1769253163324":{"runId":"run-1769253163324","timestamp":"2026-01-24T11:12:43.324Z","tests":{"test1.spec.js::@sanity Valid User Login With Credential":{"testId":"test1.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test1.spec.js","status":"passed","duration":24533,"retry":0,"steps":[{"title":"Launch browser","duration":239,"category":"pw:api"},{"title":"Create context","duration":13,"category":"pw:api"},{"title":"Create page","duration":232,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":3841,"category":"pw:api"},{"title":"Click locator('text=/sampleDB')","duration":719,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')","duration":19195,"category":"pw:api","isSlowest":true},{"title":"Fill \"Password1!\" locator('//input[@id=\\'passwordField\\']')","duration":9,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":472,"category":"pw:api"},{"title":"Close context","duration":22,"category":"pw:api"}]}}},"run-1769277694452":{"runId":"run-1769277694452","timestamp":"2026-01-24T18:01:34.452Z","tests":{"rsa.spec.js::@sanity Valid User Login With Credential":{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"failed","duration":3679,"retry":0,"error":"Error: Failed to check the element: //input[@value='radio1']. Error: locator.toBeChecked is not a function\n    at ActionUtils.toBechecked (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\utils\\ActonUtils.js:62:19)\n    at HomePage.clickingOnRadioButton (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\pages\\page\\RahulShettyPage.js:20:24)\n    at C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\tests\\rsa.spec.js:15:5","steps":[{"title":"Launch browser","duration":464,"category":"pw:api"},{"title":"Create context","duration":11,"category":"pw:api"},{"title":"Create page","duration":171,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":3211,"category":"pw:api","isSlowest":true},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":184,"category":"pw:api"},{"title":"Close context","duration":29,"category":"pw:api"}]}}},"run-1769277779471":{"runId":"run-1769277779471","timestamp":"2026-01-24T18:02:59.471Z","tests":{"rsa.spec.js::@sanity Valid User Login With Credential":{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"passed","duration":3070,"retry":0,"steps":[{"title":"Launch browser","duration":214,"category":"pw:api"},{"title":"Create context","duration":14,"category":"pw:api"},{"title":"Create page","duration":156,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":2567,"category":"pw:api","isSlowest":true},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":203,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio2\\']')","duration":48,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio3\\']')","duration":30,"category":"pw:api"},{"title":"Close context","duration":28,"category":"pw:api"}]}}},"run-1769279081119":{"runId":"run-1769279081119","timestamp":"2026-01-24T18:24:41.119Z","tests":{"rsa.spec.js::@sanity Valid User Login With Credential":{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"failed","duration":2683,"retry":0,"error":"Error: Failed to fill text. Error: locator.fill: Error: Element is not an \u003cinput\u003e, \u003ctextarea\u003e or [contenteditable] element\nCall log:\n  - waiting for locator('//select[@id=\\'dropdown-class-example\\']')\n    - locator resolved to \u003cselect id=\"dropdown-class-example\" name=\"dropdown-class-example\"\u003e…\u003c/select\u003e\n    - fill(\"Option1\")\n  - attempting fill action\n    - waiting for element to be visible, enabled and editable\n\n    at ActionUtils.fill (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\utils\\ActonUtils.js:35:19)\n    at HomePage.clickingOnDropdown (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\pages\\page\\RahulShettyPage.js:26:5)\n    at C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\tests\\rsa.spec.js:16:5","steps":[{"title":"Launch browser","duration":196,"category":"pw:api"},{"title":"Create context","duration":11,"category":"pw:api"},{"title":"Create page","duration":171,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":2093,"category":"pw:api","isSlowest":true},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":190,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio2\\']')","duration":42,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio3\\']')","duration":48,"category":"pw:api"},{"title":"Fill \"Option1\" locator('//select[@id=\\'dropdown-class-example\\']')","duration":9,"category":"pw:api"},{"title":"Close context","duration":40,"category":"pw:api"}]}}},"run-1769279355258":{"runId":"run-1769279355258","timestamp":"2026-01-24T18:29:15.258Z","tests":{"rsa.spec.js::@sanity Valid User Login With Credential":{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"failed","duration":2761,"retry":0,"error":"Error: locator.selectOption: Test ended.\nCall log:\n  - waiting for locator('//select[@id=\\'dropdown-class-example\\']')\n\n    at ActionUtils.selectOptions (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\utils\\ActonUtils.js:75:21)\n    at HomePage.clickingOnDropdown (C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\pages\\page\\RahulShettyPage.js:26:24)\n    at C:\\Users\\rbarik\\Desktop\\Personal\\Playwright\\Playwright_modern2\\PlaywrightModern\\tests\\rsa.spec.js:16:20","steps":[{"title":"Launch browser","duration":215,"category":"pw:api"},{"title":"Create context","duration":13,"category":"pw:api"},{"title":"Create page","duration":170,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":2233,"category":"pw:api","isSlowest":true},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":218,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio2\\']')","duration":45,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio3\\']')","duration":33,"category":"pw:api"},{"title":"Select option locator('//select[@id=\\'dropdown-class-example\\']')","duration":30,"category":"pw:api"},{"title":"Close context","duration":-1,"category":"pw:api"}]}}},"run-1769282496922":{"runId":"run-1769282496922","timestamp":"2026-01-24T19:21:36.922Z","tests":{"rsa.spec.js::@sanity Valid User Login With Credential":{"testId":"rsa.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"rsa.spec.js","status":"passed","duration":3059,"retry":0,"steps":[{"title":"Launch browser","duration":371,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":169,"category":"pw:api"},{"title":"Navigate to \"/AutomationPractice/\"","duration":2503,"category":"pw:api","isSlowest":true},{"title":"Check locator('//input[@value=\\'radio1\\']')","duration":200,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio2\\']')","duration":53,"category":"pw:api"},{"title":"Check locator('//input[@value=\\'radio3\\']')","duration":57,"category":"pw:api"},{"title":"Select option locator('//select[@id=\\'dropdown-class-example\\']')","duration":7,"category":"pw:api"},{"title":"Close context","duration":29,"category":"pw:api"}]}}}};
+    const historyRunSnapshots = {"run-1769676236507":{"runId":"run-1769676236507","timestamp":"2026-01-29T08:43:56.507Z","tests":{"test2.spec.js::handle PVCS dialog with keyboard":{"testId":"test2.spec.js::handle PVCS dialog with keyboard","title":"handle PVCS dialog with keyboard","file":"test2.spec.js","status":"timedOut","duration":30033,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":156,"category":"pw:api"},{"title":"Create context","duration":11,"category":"pw:api"},{"title":"Create page","duration":908,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":3444,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":711,"category":"pw:api"},{"title":"Wait for timeout","duration":1013,"category":"pw:api"},{"title":"Press \"Tab\"","duration":7,"category":"pw:api"},{"title":"Wait for timeout","duration":504,"category":"pw:api"},{"title":"Press \"Enter\"","duration":7,"category":"pw:api"},{"title":"Wait for timeout","duration":5008,"category":"pw:api"},{"title":"Wait for selector locator('#nameField')","duration":18400,"category":"pw:api","isSlowest":true},{"title":"Close context","duration":17,"category":"pw:api"}]}}},"run-1769676430831":{"runId":"run-1769676430831","timestamp":"2026-01-29T08:47:10.831Z","tests":{"test2.spec.js::handle native OS dialog with robotjs":{"testId":"test2.spec.js::handle native OS dialog with robotjs","title":"handle native OS dialog with robotjs","file":"test2.spec.js","status":"timedOut","duration":30031,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":182,"category":"pw:api"},{"title":"Create context","duration":10,"category":"pw:api"},{"title":"Create page","duration":661,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":5057,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":720,"category":"pw:api"},{"title":"Wait for timeout","duration":2008,"category":"pw:api"},{"title":"Wait for timeout","duration":10006,"category":"pw:api","isSlowest":true},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":2015,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2008,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2010,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2013,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":1226,"category":"pw:api"},{"title":"Close context","duration":13,"category":"pw:api"}]}}},"run-1769676539992":{"runId":"run-1769676539992","timestamp":"2026-01-29T08:48:59.992Z","tests":{"test2.spec.js::navigate dialog with Tab key":{"testId":"test2.spec.js::navigate dialog with Tab key","title":"navigate dialog with Tab key","file":"test2.spec.js","status":"timedOut","duration":30038,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":142,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":741,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":5041,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":702,"category":"pw:api"},{"title":"Wait for timeout","duration":3015,"category":"pw:api"},{"title":"Wait for timeout","duration":516,"category":"pw:api"},{"title":"Wait for timeout","duration":501,"category":"pw:api"},{"title":"Wait for timeout","duration":1005,"category":"pw:api"},{"title":"Wait for timeout","duration":1015,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":2001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2007,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":174,"category":"pw:api"},{"title":"Wait for timeout","duration":2012,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":6747,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":1595,"category":"pw:api"},{"title":"Close context","duration":13,"category":"pw:api"}]}}},"run-1769676598166":{"runId":"run-1769676598166","timestamp":"2026-01-29T08:49:58.166Z","tests":{"test2.spec.js::navigate dialog with Tab key":{"testId":"test2.spec.js::navigate dialog with Tab key","title":"navigate dialog with Tab key","file":"test2.spec.js","status":"timedOut","duration":34266,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":146,"category":"pw:api"},{"title":"Create context","duration":11,"category":"pw:api"},{"title":"Create page","duration":648,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":4531,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":696,"category":"pw:api"},{"title":"Wait for timeout","duration":3008,"category":"pw:api"},{"title":"Wait for timeout","duration":512,"category":"pw:api"},{"title":"Wait for timeout","duration":515,"category":"pw:api"},{"title":"Wait for timeout","duration":1004,"category":"pw:api"},{"title":"Wait for timeout","duration":1001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":2002,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8221,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":2007,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('#nameField')","duration":6,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('#passwordField')","duration":5,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":4092,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Screenshot","duration":252,"category":"pw:api"},{"title":"Close context","duration":12,"category":"pw:api"}]}}},"run-1769676752561":{"runId":"run-1769676752561","timestamp":"2026-01-29T08:52:32.561Z","tests":{"test2.spec.js::navigate dialog with Tab key":{"testId":"test2.spec.js::navigate dialog with Tab key","title":"navigate dialog with Tab key","file":"test2.spec.js","status":"passed","duration":28016,"retry":0,"steps":[{"title":"Launch browser","duration":158,"category":"pw:api"},{"title":"Create context","duration":11,"category":"pw:api"},{"title":"Create page","duration":747,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":4687,"category":"pw:api","isSlowest":true},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":717,"category":"pw:api"},{"title":"Wait for timeout","duration":3011,"category":"pw:api"},{"title":"Wait for timeout","duration":512,"category":"pw:api"},{"title":"Wait for timeout","duration":1011,"category":"pw:api"},{"title":"Wait for timeout","duration":502,"category":"pw:api"},{"title":"Wait for timeout","duration":1001,"category":"pw:api"},{"title":"Wait for timeout","duration":1013,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":2001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":966,"category":"pw:api"},{"title":"Wait for timeout","duration":2001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1996,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('#nameField')","duration":5,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('#passwordField')","duration":5,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":425,"category":"pw:api"},{"title":"Wait for timeout","duration":2008,"category":"pw:api"},{"title":"Screenshot","duration":155,"category":"pw:api"},{"title":"Close context","duration":14,"category":"pw:api"}]}}},"run-1769677077508":{"runId":"run-1769677077508","timestamp":"2026-01-29T08:57:57.509Z","tests":{"test2.spec.js::navigate dialog with Tab key":{"testId":"test2.spec.js::navigate dialog with Tab key","title":"navigate dialog with Tab key","file":"test2.spec.js","status":"passed","duration":28581,"retry":0,"steps":[{"title":"Launch browser","duration":138,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":930,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":2851,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":702,"category":"pw:api"},{"title":"Wait for timeout","duration":3013,"category":"pw:api"},{"title":"Wait for timeout","duration":515,"category":"pw:api"},{"title":"Wait for timeout","duration":1002,"category":"pw:api"},{"title":"Wait for timeout","duration":502,"category":"pw:api"},{"title":"Wait for timeout","duration":1014,"category":"pw:api"},{"title":"Wait for timeout","duration":1002,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":2008,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2008,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2014,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":5209,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":2006,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":0,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('#nameField')","duration":5,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('#passwordField')","duration":6,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":475,"category":"pw:api"},{"title":"Wait for timeout","duration":2013,"category":"pw:api"},{"title":"Screenshot","duration":68,"category":"pw:api"},{"title":"Close context","duration":16,"category":"pw:api"}]}}},"run-1769677614618":{"runId":"run-1769677614618","timestamp":"2026-01-29T09:06:54.618Z","tests":{"test2.spec.js::navigate dialog with Tab key":{"testId":"test2.spec.js::navigate dialog with Tab key","title":"navigate dialog with Tab key","file":"test2.spec.js","status":"passed","duration":29505,"retry":0,"steps":[{"title":"Launch browser","duration":154,"category":"pw:api"},{"title":"Create context","duration":12,"category":"pw:api"},{"title":"Create page","duration":768,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":2551,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":703,"category":"pw:api"},{"title":"Wait for timeout","duration":3013,"category":"pw:api"},{"title":"Wait for timeout","duration":501,"category":"pw:api"},{"title":"Wait for timeout","duration":1006,"category":"pw:api"},{"title":"Wait for timeout","duration":516,"category":"pw:api"},{"title":"Wait for timeout","duration":1011,"category":"pw:api"},{"title":"Wait for timeout","duration":1013,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7,"category":"pw:api"},{"title":"Wait for timeout","duration":2016,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2013,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":929,"category":"pw:api"},{"title":"Wait for timeout","duration":2003,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":5587,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":2000,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":6,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('#nameField')","duration":5,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('#passwordField')","duration":5,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":499,"category":"pw:api"},{"title":"Wait for timeout","duration":2013,"category":"pw:api"},{"title":"Screenshot","duration":113,"category":"pw:api"},{"title":"Close context","duration":13,"category":"pw:api"}]}}},"run-1769683755469":{"runId":"run-1769683755469","timestamp":"2026-01-29T10:49:15.469Z","tests":{"test3.spec.js::@sanity Valid User Login With Credential":{"testId":"test3.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test3.spec.js","status":"timedOut","duration":30047,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":150,"category":"pw:api"},{"title":"Create context","duration":9,"category":"pw:api"},{"title":"Create page","duration":691,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":2518,"category":"pw:api"},{"title":"Click locator('text=/sampleDB')","duration":715,"category":"pw:api"},{"title":"Wait for timeout","duration":3016,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":512,"category":"pw:api"},{"title":"Wait for timeout","duration":1010,"category":"pw:api"},{"title":"Wait for timeout","duration":514,"category":"pw:api"},{"title":"Wait for timeout","duration":1014,"category":"pw:api"},{"title":"Wait for timeout","duration":1014,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":31,"category":"pw:api"},{"title":"Wait for timeout","duration":2010,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2002,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2014,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":5,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":5,"category":"pw:api"},{"title":"Wait for timeout","duration":2012,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2001,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":4,"category":"pw:api"},{"title":"Wait for timeout","duration":2002,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":1709,"category":"pw:api"},{"title":"Close context","duration":16,"category":"pw:api"}]}}},"run-1769683861864":{"runId":"run-1769683861864","timestamp":"2026-01-29T10:51:01.864Z","tests":{"test3.spec.js::@sanity Valid User Login With Credential":{"testId":"test3.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test3.spec.js","status":"timedOut","duration":35031,"retry":0,"error":"Test timeout of 30000ms exceeded.","steps":[{"title":"Launch browser","duration":157,"category":"pw:api"},{"title":"Create context","duration":13,"category":"pw:api"},{"title":"Create page","duration":652,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":4745,"category":"pw:api"},{"title":"Click locator('text=/sampleDB')","duration":713,"category":"pw:api"},{"title":"Wait for timeout","duration":3010,"category":"pw:api"},{"title":"Wait for timeout","duration":514,"category":"pw:api"},{"title":"Wait for timeout","duration":1012,"category":"pw:api"},{"title":"Wait for timeout","duration":515,"category":"pw:api"},{"title":"Wait for timeout","duration":1012,"category":"pw:api"},{"title":"Wait for timeout","duration":1016,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":11,"category":"pw:api"},{"title":"Wait for timeout","duration":2010,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2002,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2,"category":"pw:api"},{"title":"Wait for timeout","duration":2010,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":1,"category":"pw:api"},{"title":"Wait for timeout","duration":2009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":2541,"category":"pw:api"},{"title":"Wait for timeout","duration":2005,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7360,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":691,"category":"pw:api"},{"title":"Close context","duration":13,"category":"pw:api"}]}}},"run-1769684528881":{"runId":"run-1769684528881","timestamp":"2026-01-29T11:02:08.881Z","tests":{"test3.spec.js::@sanity Valid User Login With Credential":{"testId":"test3.spec.js::@sanity Valid User Login With Credential","title":"@sanity Valid User Login With Credential","file":"test3.spec.js","status":"passed","duration":47515,"retry":0,"steps":[{"title":"Launch browser","duration":168,"category":"pw:api"},{"title":"Create context","duration":9,"category":"pw:api"},{"title":"Create page","duration":635,"category":"pw:api"},{"title":"Navigate to \"/vminet.html\"","duration":2797,"category":"pw:api"},{"title":"Click locator('//a[text()=\\'/sampleDB\\']')","duration":695,"category":"pw:api"},{"title":"Wait for timeout","duration":5014,"category":"pw:api"},{"title":"Wait for timeout","duration":807,"category":"pw:api"},{"title":"Wait for timeout","duration":1511,"category":"pw:api"},{"title":"Wait for timeout","duration":811,"category":"pw:api"},{"title":"Wait for timeout","duration":1510,"category":"pw:api"},{"title":"Wait for timeout","duration":2004,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":8,"category":"pw:api"},{"title":"Wait for timeout","duration":3003,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":103,"category":"pw:api"},{"title":"Wait for timeout","duration":3011,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":5272,"category":"pw:api"},{"title":"Wait for timeout","duration":3009,"category":"pw:api"},{"title":"Query count locator('#nameField')","duration":7,"category":"pw:api"},{"title":"Query count locator('//input[@id=\\'nameField\\']')","duration":2,"category":"pw:api"},{"title":"Fill \"Administrator\" locator('//input[@id=\\'nameField\\']')","duration":6,"category":"pw:api"},{"title":"Fill \"Password1!\" locator('//input[@id=\\'passwordField\\']')","duration":6,"category":"pw:api"},{"title":"Click locator('//button[text()=\\'OK\\']')","duration":9045,"category":"pw:api","isSlowest":true},{"title":"Wait for timeout","duration":2013,"category":"pw:api"},{"title":"Screenshot","duration":4352,"category":"pw:api"},{"title":"Close context","duration":67,"category":"pw:api"}]}}}};
     const detailsBodyCache = new WeakMap();
     let currentView = 'overview';
     let selectedTestId = null;
